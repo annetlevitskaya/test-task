@@ -1,0 +1,43 @@
+.about {
+    background-color: $main-color;
+    position: relative;
+}
+
+.about__container {
+    padding-left: 114px;
+    box-sizing: border-box;
+}
+
+.about__empty {
+    width: 584px;
+    height: 28px;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    background-color: $main-color;
+    top: -27px;
+    left: 186px;
+}
+
+.about__caption {
+    color: $white-color;
+    font-family: $font-bold;
+    font-size: 48px;
+    padding: 35px 0 25px 0;
+}
+
+.about__text {
+    line-height: 23px;
+}
+
+.about__paragraph {
+    width: 939px;
+    color: $white-color;
+    font-family: $font;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+    a {
+        color: $white-color;
+        font-family: $font-bold;
+    }
+}

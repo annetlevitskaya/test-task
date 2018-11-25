@@ -12,17 +12,17 @@
     display: flex;
     padding: 18px 0 21px 33px;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: $white-color;
 }
 
-.navigation {
+.navigation__box {
     display: flex;
     align-items: center;
     margin-right: 3px;
 }
 
 .navigation__item {
-    color: #191919;
+    color: $black-color;
     font-family: $font;
     font-size: 18px;
     text-decoration: none;
@@ -32,11 +32,11 @@
 
 .navigation__btn {
     font-family: $font-bold;
-    color: #191919;
+    color: $black-color;
     font-size: 18px;
     height: 39px;
     margin-top: 5px;
-    background-color: #ffffff;
+    background-color: $white-color;
     border-radius: 4px;
     border: 3px solid #ff530f;
     padding: 0 16px;
@@ -50,6 +50,6 @@
     justify-content: space-between;
 }
 
-.navigation__box {
+.navigation {
     padding: 0 41px 0 0;
 }
