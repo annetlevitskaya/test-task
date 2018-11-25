@@ -23,7 +23,7 @@
 
 .navigation__item {
     color: #191919;
-    font-family: "PragmaticaBook-Reg";
+    font-family: $font;
     font-size: 18px;
     text-decoration: none;
     padding: 0 13px;
@@ -31,7 +31,7 @@
 }
 
 .navigation__btn {
-    font-family: 'PragmaticaBold-Reg';
+    font-family: $font-bold;
     color: #191919;
     font-size: 18px;
     height: 39px;
