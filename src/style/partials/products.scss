@@ -1,6 +1,7 @@
 .products {
     background-color: $main-color;
     position: relative;
+    padding-bottom: 109px;
 }
 
 .products__container {
@@ -85,8 +86,16 @@
     margin-top: 32px;
     margin-top: 32px;
     padding: 18px 0 23px 0;
+    cursor: pointer;
 }
 
 .product__check {
     margin-left: 17px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: $white-color;
+    margin-top: 50px;
 }
