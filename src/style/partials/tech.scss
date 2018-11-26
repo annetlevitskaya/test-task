@@ -116,13 +116,17 @@
     position: relative;
 }
 
-.cards__container {
+.cards__container,
+.cards__caption_box {
     border-radius: 4px;
     background-color: $white-color;
+    width: 1140px;
+}
+
+.cards__caption_box {
     position: absolute;
     top: -75px;
     left: 190px;
-    width: 1140px;
 }
 
 .cards__caption {
@@ -143,7 +147,7 @@
 
 .cards__list_container {
     display: flex;
-    padding: 44px 0 0 0;
+    padding: 48px 0 0 0;
     margin: 0 82px 0 38px;
 }
 
@@ -174,4 +178,80 @@
 .cards__lists--4 {
     padding-left: 27px;
     border: none;
+}
+
+.examples__container {
+    padding-top: 121px;
+}
+
+.examples__caption {
+    color: #fc5d0c;
+    font-family: $font-bold;
+    font-size: 48px;
+    width: 954px;
+    margin: 0 auto;
+}
+
+.examples__cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 94px 20px 0 22px;
+}
+
+.examples__card_box {
+    display: flex;
+    flex-direction: column;
+    width: 262px;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: $white-color;
+    margin-bottom: 32px;
+}
+
+.example__card_img {
+    width: 160px;
+    height: 101px;
+    padding: 58px 50px;
+}
+
+.examples__card--9 {
+    padding: 46px 0 69px 49px;
+}
+
+.examples__card--10 {
+    width: 142px;
+    height: 89px;
+    padding: 55px 54px 71px 54px;
+}
+
+.examples__card--11 {
+    width: 217px;
+    height: 186px;
+    padding: 17px 1px 13px 42px;
+}
+
+.examples__card--12 {
+    width: 229px;
+    height: 170px;
+    padding: 25px 0 21px 18px;
+}
+
+.example__card_text {
+    width: 262px;
+    border-radius: 4px;
+    background-color: #2d485d;
+    display: inline-block;
+    color: $white-color;
+    font-family: $font;
+    font-size: 16px;
+    height: 60px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 22px;
+}
+
+.example__btn {
+    margin: 33px auto;
 }
