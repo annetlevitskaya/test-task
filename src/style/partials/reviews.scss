@@ -1,0 +1,233 @@
+.reviews {
+
+    &__container {
+        padding: 97px 0 0 234px;
+    }
+
+    &__caption {
+        font-family: $font-bold;
+        font-size: 48px;
+        padding-bottom: 55px;
+        color: #fc5d0c;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box_row {
+        display: flex;
+    }
+
+    &__text {
+        width: 729px;
+        border-radius: 4px;
+        border: 10px solid #eaeaea;
+        padding-bottom: 22px;
+        margin-bottom: 53px;
+        position: relative;
+    }
+
+    &__text_description {
+        width: 699px;
+        color: #000000;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px 0 0 22px;
+        display: inline-block;
+        line-height: 21px;
+    }
+
+    &__eva {
+        padding-top: 12px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+    }
+
+    &__name_eva {
+        padding: 30px 10px 0 27px;
+    }
+
+    &__may {
+        padding-top: 13px;
+        line-height: 22px;
+    }
+
+    &__text_name {
+        color: #000000;
+        font-family: $font-bold;
+        font-size: 24px;
+        padding: 35px 0 0 20px;
+        display: inline-block;
+    }
+
+    &__text_position {
+        color: #c6c6c6;
+        font-family: $font;
+        font-size: 18px;
+        padding-left: 39px;
+    }
+
+    &__img--wog {
+        width: 131px;
+        height: 82px;
+        padding: 69px 0 0px 48px;
+    }
+
+    &__img--eva {
+        width: 119px;
+        height: 69px;
+        padding: 75px 0 0 34px;
+        margin-right: 41px;
+    }
+
+    &__img--may {
+        width: 119px;
+        height: 42px;
+        padding: 130px 0 0 53px;
+    }
+
+    &__btn {
+        width: 275px;   
+        display: flex;
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background-color: $main-color;
+        color: $white-color;
+        font-family: $font-bold;
+        font-size: 24px;
+        padding: 16px 0 12px 35px;
+        margin-left: 352px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__btn_img {
+        width: 42px;
+        height: 43px;
+        padding-left: 32px;
+    }
+}
+
+.text__name_may {
+    padding: 20px 0 0 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews__container {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .reviews__text_description {
+        width: 575px;
+    }
+    
+    .reviews__text_name {
+        font-size: 22px;
+    }
+
+    .reviews__btn {
+        margin-left: 310px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .reviews__text_description {
+        width: 443px;
+    }
+
+    .reviews__text {
+        width: 500px;
+    }
+
+    .reviews__img--wog {
+        padding-left: 23px;
+    }
+
+    .reviews__img--eva {
+        padding-left: 0;
+    }
+
+    .reviews__img--may {
+        padding-left: 30px;
+    }
+
+    .reviews__btn {
+        margin-left: 259px;
+    }
+}
+
+@media screen and (max-width: 770px)  {
+    .reviews__box_row {
+        flex-direction: column;
+    }
+
+    .reviews__img--wog {
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+
+    .reviews__text {
+        margin: 0 auto; 
+    }
+
+    .reviews__img--may {
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .reviews__img--eva {
+        order: 1;
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+
+    .reviews__btn {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .reviews__text_description {
+        width: 356px;
+    }
+
+    .reviews__text {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .reviews__text_position {
+        padding-left: 21px;
+        padding-top: 10px;;
+    }
+
+    .reviews__text {
+        width: 411px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .reviews__text {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .reviews__text_description {
+        width: 201px;
+    }
+
+    .reviews__text {
+        width: 280px;
+    }
+
+    .reviews__text_position {
+        padding-left: 18px;
+        font-size: 15px;
+    }
+}

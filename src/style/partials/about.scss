@@ -1,44 +1,114 @@
 .about {
     background-color: $main-color;
     position: relative;
+
+    &__container {
+        padding-left: 118px;
+        box-sizing: border-box;
+        padding-bottom: 83px;
+    }
+
+    &__empty {
+        width: 584px;
+        height: 28px;
+        border-radius: 4px 4px 0 0;
+        position: absolute;
+        background-color: $main-color;
+        top: -27px;
+        left: 190px;
+    }
+
+    &__caption {
+        font-family: $font-bold;
+        font-size: 48px;
+        padding: 35px 0 25px 0;
+        color: $white-color;
+    }
+
+    &__text {
+        line-height: 23px;
+    }
+
+    &__paragraph {
+        width: 939px;
+        color: $white-color;
+        font-family: $font;
+        font-size: 18px;
+        padding-bottom: 20px;
+    
+        a {
+            color: $white-color;
+            font-family: $font-bold;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about__container {
+        padding-left: 27px;
+    }
+
+    .about__empty {
+        left: 149px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .about__empty {
+        left: 100px;
+    }
+
+    .about__paragraph {
+        width: 770px; 
+    }
 }
 
 .about__container {
-    padding-left: 118px;
-    box-sizing: border-box;
-    padding-bottom: 83px;
+    padding-left: 0px;
 }
 
-.about__empty {
-    width: 584px;
-    height: 28px;
-    border-radius: 4px 4px 0 0;
-    position: absolute;
-    background-color: $main-color;
-    top: -27px;
-    left: 190px;
+@media screen and (max-width: 870px) {
+    .about__container {
+        padding-left: 0;
+    }
+
+    .about__paragraph {
+        width: 658px;
+    }
 }
 
-.about__caption {
-    color: $white-color;
-    font-family: $font-bold;
-    font-size: 48px;
-    padding: 35px 0 25px 0;
+@media screen and (max-width: 770px) {
+    .about__paragraph {
+        width: 480px;
+    }
+
+    .about__empty {
+        left: 51px;
+        width: 524px;
+    }
 }
 
-.about__text {
-    line-height: 23px;
+@media screen and (max-width: 520px) {
+    .about__empty {
+        left: 36px;
+        width: 367px;
+    }
+
+    .about__paragraph {
+        width: 339px;
+        font-size: 16px;
+    }
 }
 
-.about__paragraph {
-    width: 939px;
-    color: $white-color;
-    font-family: $font;
-    font-size: 18px;
-    padding-bottom: 20px;
+@media screen and (max-width: 400px) {
+    .about__paragraph {
+        width: 248px;
+        font-size: 15px;
+    }
 
-    a {
-        color: $white-color;
-        font-family: $font-bold;
+    .about__empty {
+        left: 18px;
+        width: 261px;
     }
 }
