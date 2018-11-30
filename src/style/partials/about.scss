@@ -3,7 +3,7 @@
     position: relative;
 
     &__container {
-        padding-left: 118px;
+        padding-left: 138px;
         box-sizing: border-box;
         padding-bottom: 83px;
     }
@@ -15,7 +15,7 @@
         position: absolute;
         background-color: $main-color;
         top: -27px;
-        left: 190px;
+        left: 209px;
     }
 
     &__caption {
@@ -30,7 +30,7 @@
     }
 
     &__paragraph {
-        width: 939px;
+        padding-right: 95px;
         color: $white-color;
         font-family: $font;
         font-size: 18px;
@@ -60,55 +60,42 @@
     }
 
     .about__paragraph {
-        width: 770px; 
+        padding-right: 50px;
     }
 }
 
-.about__container {
-    padding-left: 0px;
+
+@media screen and (max-width: 1030px) {
+    .about__container {
+        padding-left: 52px;
+    }
+
+    .about__empty {
+        left: 134px;
+    }
 }
 
 @media screen and (max-width: 870px) {
     .about__container {
         padding-left: 0;
     }
-
-    .about__paragraph {
-        width: 658px;
-    }
 }
 
 @media screen and (max-width: 770px) {
-    .about__paragraph {
-        width: 480px;
-    }
-
     .about__empty {
-        left: 51px;
-        width: 524px;
+        display: none;
     }
 }
 
 @media screen and (max-width: 520px) {
-    .about__empty {
-        left: 36px;
-        width: 367px;
-    }
-
     .about__paragraph {
-        width: 339px;
+        padding-right: 10px;
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .about__paragraph {
-        width: 248px;
         font-size: 15px;
-    }
-
-    .about__empty {
-        left: 18px;
-        width: 261px;
     }
 }

@@ -1,17 +1,17 @@
 .main {
-    background-image:
-    $hand-image,
-    $main-bg-img;
+    background-image: $main-bg-img;
     background-repeat: no-repeat;
     height: 683px;
-    background-size: 763px, cover;
-    background-position: 392px 79px, 0 0;
+    background-size: cover;
+    background-position: 0 0;
     position: relative;
 
     &__box {
         display: flex;
         flex-direction: column;
-        padding: 64px 0 0 49px;
+        padding: 64px 0 0 68px;
+        position: relative;
+        z-index: 1;
     }
 
     &__text {
@@ -21,21 +21,28 @@
         letter-spacing: 0;
         line-height: 48px;
         padding-bottom: 105px;
-    
-        strong {
-            letter-spacing: 1.8px;
-        }
     }
+
+    &__strong {
+        font-size: 38px;
+     }
 
     &__img_circle {
         position: absolute;
-        top: 47px;
-        right: 326px;
+        top: 0px;
+        right: 140px;
+    }
+
+    &__img_hand {
+        position: absolute;
+        right: 175px;
+        top: 29px;
+        width: 769px;
     }
     
     &__services {
         position: absolute;
-        right: 98px;
+        right: 167px;
         top: 50px;
     }
 }
@@ -66,6 +73,11 @@
     flex-direction: column;
 }
 
+.strong {
+    font-family: $font-bold;
+    letter-spacing: 1.2px;
+}
+
 .service__item {
     font-family: $font;
     color: $white-color;
@@ -74,41 +86,42 @@
     min-width: 222px;
 
     &:nth-of-type(1) {
-        right: 130px;
-        top: 10px;
+        right: 36px;
+        top: 12px;
         line-height: 21px;
     }
     &:nth-of-type(2) {
-        top: 125px;
-        right: 29px;    
-        letter-spacing: 0.2px;
+        top: 129px;
+        right: -62px;
     }
     &:nth-of-type(3) {
-        top: 210px;
-        right: 0px;
-        line-height: 23px;
-        letter-spacing: 0.3px;    
+        top: 212px;
+        right: -94px;
+        line-height: 22px;   
     }
     &:nth-of-type(4) {
-        top: 305px;
-        right: 32px;
+        top: 306px;
+        right: -62px;
         line-height: 22px;
         letter-spacing: 0.2px;
     }
     &:nth-of-type(5) {
-        right: 130px;
-        top: 422px;
+        right: 36px;
+        top: 424px;
         line-height: 22px;    
     }
 }
 
 .callback {
     position: fixed;
-    top: 256px;
     right: 0;
     z-index: 1;
     display: flex;
     flex-direction: column;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    height: 240px;
 
     &__item {
         width: 58px;
@@ -120,6 +133,7 @@
         opacity: 0.5;
         transition: opacity 0.2s ease-in;
         cursor: pointer;
+        padding: 30px 0;
 
         &:hover {
             opacity: 1;
@@ -143,16 +157,9 @@
 
 @media screen and (max-width: 1200px) {
     .main {
-        background-position: 257px 79px, 0 0;
-
         &__box {
             padding: 67px 0 0 0px;
         }
-
-        &__img_circle {
-            right: 229px;
-        }
-
     }
 
     .service__item:nth-of-type(1) {
@@ -182,15 +189,32 @@
 @media screen and (max-width: 1030px) {
     .main__text {
         font-size: 33px;
+        padding-bottom: 20px;
     }
 
     .btn {
         width: 255px;
         font-size: 20px;
     }
+
+    .main__services {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: relative;
     
-    .main {
-        background-position: 46px 79px, 0 0;
+
+        img {
+            display: none;
+        }
+
+        span {
+            position: static;
+            padding-top: 12px;
+            font-size: 95%;
+        }
+        // position: relative;
     }
 }
 
@@ -202,45 +226,16 @@
     .btn {
         width: 238px;
     }
-
-    .main {
-        background-position: -74px 79px, 0 0;
-    }
 }
 
 @media screen and (max-width: 770px) {
     .main {
-        height: 1000px;
+        height: auto;
+        padding-bottom: 20px;
     }
 
-    .main__img_circle {
-        right: 225px;
-        top: 449px;
-    }
-
-    .service__item:nth-of-type(1) {
-        top: 409px;
-    }
-
-    .service__item:nth-of-type(2) {
-        top: 509px;
-    }
-
-    .service__item:nth-of-type(3) {
-        top: 609px;
-    }
-
-    .service__item:nth-of-type(4) {
-        top: 709px;
-    }
-
-    .service__item:nth-of-type(5) {
-        top: 830px;
-        right: 27px;
-    }
-
-    .main {
-        background-position: -156px 406px, 0 0;
+    .service__item {
+        text-align: center;
     }
 
     .main__text {
@@ -258,16 +253,9 @@
         font-size: 26px;
         padding-bottom: 26px;
     }
-
-    .main {
-        background-position: -275px 406px, 0 0;
-    }
 }
 
 @media screen and (max-width: 400px) {
-    .main {
-        background-position: -348px 406px, 0 0;
-    }
 
     .main__text {
         font-size: 21px;
@@ -280,34 +268,6 @@
         img {
             height: 24px;
         }
-    }
-
-    .main__img_circle {
-        right: 190px;
-    }
-
-    .service__item:nth-of-type(1) {
-        right: 10px;
-        width: 200px;
-    }
-
-    .service__item:nth-of-type(2) {
-        right: -34px;
-        top: 525px;
-    }
-
-    .service__item:nth-of-type(3) {
-        right: -68px; 
-    }
-
-    .service__item:nth-of-type(4) {
-        right: -78px;
-        width: 200px;
-    }
-
-    .service__item:nth-of-type(5) {
-        right: -4px;
-        width: 221px;
     }
 
     .service__item {

@@ -1,13 +1,13 @@
 .reviews {
 
     &__container {
-        padding: 97px 0 0 234px;
+        padding: 99px 0 0 136px;
     }
 
     &__caption {
         font-family: $font-bold;
         font-size: 48px;
-        padding-bottom: 55px;
+        padding: 0 0 55px 4px;
         color: #fc5d0c;
     }
 
@@ -18,6 +18,13 @@
 
     &__box_row {
         display: flex;
+        &:not(:last-of-type) {
+            margin-bottom: 56px;
+        }
+
+        &:last-of-type {
+            margin-top: -4px;
+        }
     }
 
     &__text {
@@ -25,40 +32,25 @@
         border-radius: 4px;
         border: 10px solid #eaeaea;
         padding-bottom: 22px;
-        margin-bottom: 53px;
         position: relative;
     }
 
     &__text_description {
         width: 699px;
-        color: #000000;
+        color: $black-color;
         font-family: $font;
         font-size: 18px;
-        padding: 15px 0 0 22px;
+        padding: 12px 0 0 22px;
         display: inline-block;
-        line-height: 21px;
-    }
-
-    &__eva {
-        padding-top: 12px;
         line-height: 22px;
-        letter-spacing: -0.1px;
-    }
-
-    &__name_eva {
-        padding: 30px 10px 0 27px;
-    }
-
-    &__may {
-        padding-top: 13px;
-        line-height: 22px;
+        font-weight: 600;
     }
 
     &__text_name {
-        color: #000000;
+        color: $black-color;
         font-family: $font-bold;
         font-size: 24px;
-        padding: 35px 0 0 20px;
+        padding: 32px 0 0 20px;
         display: inline-block;
     }
 
@@ -78,14 +70,14 @@
     &__img--eva {
         width: 119px;
         height: 69px;
-        padding: 75px 0 0 34px;
-        margin-right: 41px;
+        padding: 78px 0 0 34px;
+        margin-right: 43px;
     }
 
     &__img--may {
         width: 119px;
         height: 42px;
-        padding: 130px 0 0 53px;
+        padding: 133px 0 0 53px;
     }
 
     &__btn {
@@ -97,8 +89,9 @@
         color: $white-color;
         font-family: $font-bold;
         font-size: 24px;
-        padding: 16px 0 12px 35px;
+        padding: 16px 0 12px 38px;
         margin-left: 352px;
+        margin-top: 49px;
         border: none;
         cursor: pointer;
     }
@@ -107,7 +100,23 @@
         width: 42px;
         height: 43px;
         padding-left: 32px;
+        position: relative;
+        top: -5px;
     }
+}
+
+.text__eva {
+    line-height: 22px;
+    padding: 14px 0 0 19px;
+}
+
+.text__name_eva {
+    padding: 30px 10px 0 24px;
+}
+
+.text__may {
+    padding-top: 21px;
+    line-height: 22px;
 }
 
 .text__name_may {
@@ -122,7 +131,8 @@
 
 @media screen and (max-width: 1030px) {
     .reviews__text_description {
-        width: 575px;
+        width: 80%;
+        box-sizing: border-box;
     }
     
     .reviews__text_name {
@@ -132,15 +142,15 @@
     .reviews__btn {
         margin-left: 310px;
     }
+
+    .reviews__text {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 870px) {
     .reviews__text_description {
         width: 443px;
-    }
-
-    .reviews__text {
-        width: 500px;
     }
 
     .reviews__img--wog {
@@ -186,7 +196,7 @@
     }
 
     .reviews__btn {
-        margin: 0 auto;
+        margin: 25px auto 0;
     }
 }
 

@@ -1,7 +1,13 @@
 <header class="header">
     <div class="container header__box">
         <img src="./img/logo.png" alt="logo" class="logo">
+
+        
+    
         <div class="flex space-between navigation">
+            <input type="checkbox" id="burger" class="burger" />
+            <label class="burger-label" for="burger"></label>
+
             <nav class="navigation__box">
                 <a href="#about" class="navigation__item">About</a>
                 <a href="#products" class="navigation__item">Products</a>
@@ -9,6 +15,7 @@
                 <a href="#portfolio" class="navigation__item">Portfolio</a>
                 <a href="#testimonials" class="navigation__item">Testimonials</a>
                 <a href="#contacts" class="navigation__item">Contacts</a>
+                <label class="burger-close" for="burger">✖</label>
             </nav>
             <button class="navigation__btn">Submit Request</button>
         </div>
